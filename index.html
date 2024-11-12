@@ -2,38 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>shut up</title>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <title></title>
+    <script>
     </script>
   </head>
   <body>
-    <table border = 1 cellpadding = 5>
-      <tr>
-        <td>IP Address</td>
-        <td id = "ip"></td>
+    <h1>Ranks</h1>
+    <table border="3">
+      <tr bgcolor="cyan" align="center">
+        <th width="93px">Omar Ahmed</th>
+        <th width="93px">Ahmed Sheiref</th>
+        <th width="93px">Mahmoud Safwat</th>
+        <th width="93px">M3TAZ</th>
+        <th width="93px">Ahmed Khaled</th>
+        <th width="93px">Josaph Hosam</th>
       </tr>
-      <tr>
-        <td>ISP</td>
-        <td id = "isp"></td>
-      </tr>
-      <tr>
-        <td>Country</td>
-        <td id = "country"></td>
-      </tr>
-      <tr>
-        <td>City</td>
-        <td id = "city"></td>
+      <tr bgcolor="gold" align="center">
+        <td width="93px">Owner</td>
+        <td width="93px">Partner</td>
+        <td width="93px">MVP+ GrandMaster</td>
+        <td width="93px">Master</td>
+        <td width="93px">GrandMaster</td>
+        <td width="93px">MVP GrandMaster</td>
       </tr>
     </table>
-
-    <script type="text/javascript">
-      $.getJSON('https://ipapi.co/json/', function(data){
-        $("#ip").text(data.ip);
-        $('#isp').text(data.org);
-        $('#country').text(data.country_name);
-        $('#city').text(data.region);
-        $("#gmaps").attr("src", "https://www.google.com/maps?q="+data.latitude+","+data.longitude+"&output=embed");
-      })
-    </script>
   </body>
 </html>
